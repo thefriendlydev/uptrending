@@ -28,9 +28,29 @@
   </div>
 </div>
 
-<div class="section labs">
+<div class="section labsList">
   <div class="container">
+    <div class="grid labsList-grid">
+      <?php $labs = get_field('labs'); if( $labs ): ?>
+        <?php foreach( $labs as $post): setup_postdata($post); ?>
+          <div class="grid-1of3 grid-1of2--lap grid-1of1--palm">
+            <div class="lab">
+              <div class="lab-top" style="background-color: <?php the_field('card_background_color'); ?>; background-image: url(<?= the_field('card_background_image'); ?>);">
+              </div>
+              <div class="lab-bottom">
 
+              </div>
+            </div>
+          </div>
+        <?php endforeach; wp_reset_postdata(); ?>
+      <?php endif; ?>
+      <div class="grid-1of3 grid-1of2--lap grid-1of1--palm">
+        <div class="labsCta">
+          <div class="labsCta-title"><?php the_field('labs_cta_title'); ?></div>
+          <div class="labsCta-paragraph"><?php the_field('labs_cta_paragraph'); ?></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

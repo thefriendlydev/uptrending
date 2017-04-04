@@ -31,8 +31,8 @@ acf_add_local_field_group(array (
     ),
     array (
       'key' => 'field_58e3dfa622e79',
-      'label' => 'Labs Paragraph Title',
-      'name' => 'labs_paragraph_title',
+      'label' => 'Labs CTA Title',
+      'name' => 'labs_cta_title',
       'type' => 'text',
       'instructions' => '',
       'required' => 0,
@@ -50,8 +50,8 @@ acf_add_local_field_group(array (
     ),
     array (
       'key' => 'field_58e3dfbf22e7a',
-      'label' => 'Labs Paragraph',
-      'name' => 'labs_paragraph',
+      'label' => 'Labs CTA Paragraph',
+      'name' => 'labs_cta_paragraph',
       'type' => 'textarea',
       'instructions' => '',
       'required' => 0,
