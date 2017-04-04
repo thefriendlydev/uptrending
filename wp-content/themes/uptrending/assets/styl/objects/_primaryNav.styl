@@ -1,0 +1,76 @@
+.nav
+  width: 100%
+  position: fixed
+  background-color: #000000
+  padding: 20px 0
+  z-index: 10
+  @media breakpoints.palm.breakpoint
+    position: static
+
+.navContainer
+  display: table
+  width: 100%
+  *
+    vertical-align: middle
+  @media breakpoints.palm.breakpoint
+    display: block
+
+.nav-left
+  display: table-cell
+  text-align: left
+  @media breakpoints.palm.breakpoint
+    display: block
+    text-align: center
+
+.nav-right
+  display: table-cell
+  text-align: right
+  @media breakpoints.palm.breakpoint
+    display: block
+    text-align: center
+
+.navLogo
+  a
+    display: inline-block
+    &:focus
+      outline: none
+  @media breakpoints.palm.breakpoint
+    margin-bottom: 10px
+  img
+    display: inline-block
+    max-height: 11px
+
+
+.primaryNav
+  @extend .u-plainList
+  li
+    display: inline-block
+    padding-right: 30px
+    &:last-child
+      padding-right: 0
+    a
+      display: inline-block
+      color: #a0a0a0
+      font-weight: bold
+      font-size: 12px
+      text-transform: uppercase
+      letter-spacing: 0.02em
+      &:hover
+        color: #fbfbfd
+    &:last-child a:after
+      content: "\e901"
+      font-family: 'icomoon' !important
+      font-size: 10px
+      margin-left: 3px
+      speak: none
+      font-style: normal
+      font-weight: normal
+      font-variant: normal
+      text-transform: none
+      line-height: 1
+
+    &.current-menu-item a
+      color: #fbfbfd
+  @media breakpoints.palm.breakpoint
+    display: block
+    text-align: center
