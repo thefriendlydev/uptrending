@@ -15,4 +15,23 @@
 
 <?php get_header(); ?>
 
+<div class="section hero">
+  <div class="bgImage" style="background-image: url(<?= the_field('hero_background_image'); ?>)">
+    <div class="container container--narrow">
+      <div class="hero-tagline"><?php the_field('hero_tagline'); ?></div>
+      <div class="hero-subTagline"><?php the_field('hero_sub_tagline'); ?></div>
+
+      <?php if( get_field('anchor_scroll_link') ): ?>
+        <a class="hero-anchorLink" href="<?php the_field('anchor_scroll_link'); ?>"></a>
+      <?php endif; ?>
+    </div>
+  </div>
+</div>
+
+<div class="section labs">
+  <div class="container">
+
+  </div>
+</div>
+
 <?php get_footer(); ?>
