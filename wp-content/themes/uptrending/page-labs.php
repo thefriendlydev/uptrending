@@ -22,13 +22,13 @@
       <div class="hero-subTagline"><?php the_field('hero_sub_tagline'); ?></div>
 
       <?php if( get_field('anchor_scroll_link') ): ?>
-        <a class="hero-anchorLink" href="<?php the_field('anchor_scroll_link'); ?>"></a>
+        <a class="hero-anchorLink" href="labs/<?php the_field('anchor_scroll_link'); ?>"></a>
       <?php endif; ?>
     </div>
   </div>
 </div>
 
-<div class="section labsList">
+<div class="section labsList" id="labsList">
   <div class="container">
     <div class="grid labsList-grid">
       <?php $labs = get_field('labs'); if( $labs ): ?>
