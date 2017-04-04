@@ -14,7 +14,7 @@
   <script src="<?php bloginfo('template_url'); ?>/dist/<?php AssetLink::manifest_url('application-min.js'); ?>"></script>
 
   <!-- TypeKit Fonts -->
-  <script src="https://use.typekit.net/bhb0knn.js"></script>
+  <script src="https://use.typekit.net/oqd1jyk.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <base href="/">
   <?php wp_head(); ?>
